@@ -25,9 +25,9 @@ def checkvalidpassword(pwd):
  		
  		if i.isupper():
  			my_uppercase += 1
- 		if i.islower():
+ 		elif i.islower():
  			my_lowercase += 1
- 		if i.isdigit():
+ 		elif i.isdigit():
  			my_number += 1
 
 	#print my_number,my_lowercase,my_uppercase
