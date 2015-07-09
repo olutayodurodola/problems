@@ -2,7 +2,7 @@ import unittest, problem_4
 
 class FibonancciTest(unittest.TestCase):
 	def testPositiveFibonancci(self):
-		self.assertEqual(problem_4.generateSeries(5), 5, msg="fibonancci should return 5")
+		self.assertEqual(problem_4.generateSeries(5), [0,1,1,2,3,5], msg="fibonancci should return [0,1,1,2,3,5]")
 	def testNegativeFibonancci(self):
 		self.assertEqual(problem_4.generateSeries(-9), -1, msg="Fibonancci should return false for a negative number")
 	def testDecimalInput(self):

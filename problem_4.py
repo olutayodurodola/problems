@@ -7,16 +7,16 @@ def generateSeries(n):
 		return -1
 	f0 = 0
 	f1 = 1
-	fseries = []
+	fseries = [0]
 	while (n > 0):
-		fseries.append(f0)
 		fseries.append(f1)
+		f2 = f1 + f0
 		f0 = f1
-		f1 = f1 + f0
+		f1 = f2
 		n -= 1
 	return fseries
 
-
+print generateSeries(5)
 
 
 def generateSeriesSum(n,radix=None):
