@@ -17,8 +17,26 @@ def generateSeries(n):
 	return fseries
 
 print generateSeries(5)
+print generateSeries(20)
 
 
 def generateSeriesSum(n,radix=None):
-	pass
 	
+	if n < 0:
+		return -1
+	if (type(n) == int) and (radix == None):
+		ty = []
+		mysum = 0
+		ty = generateSeries(n)
+		for x in ty:
+			mysum = mysum + x
+		return mysum
+	if type(n) != int:
+		return -1
+	if type(n) == float:
+		return -1
+	
+
+print generateSeriesSum(5)
+
+
